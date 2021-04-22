@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../UserContext";
-
+import RoomList from "../home/RoomList";
 const Home = (props) => {
   const { user, setUser } = useContext(UserContext);
   const rooms = [
@@ -67,6 +67,9 @@ const Home = (props) => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="col s6 m5 offset-1">
+          <RoomList rooms={rooms} />
         </div>
       </div>
 
