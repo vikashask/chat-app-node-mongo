@@ -15,7 +15,7 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/chat">
+            <Route path="/chat/:room_id/:room_name">
               <Chat />
             </Route>
           </Switch>
